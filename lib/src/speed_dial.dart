@@ -568,7 +568,9 @@ class _ChildrensOverlayState extends State<_ChildrensOverlay> {
                               : widget.dialKey.globalPaintBounds!.size.width) +
                           max(widget.widget.childrenButtonSize.width - 56, 0) /
                               2,
-                      0)
+                      widget.dialKey.globalPaintBounds!.size.height +
+                          widget.widget.spaceBetweenChildren! +
+                          widget.widget.spacing! + 5)
                   : widget.widget.direction.isLeft
                       ? Offset(-10.0,
                           widget.dialKey.globalPaintBounds!.size.height / 2)
